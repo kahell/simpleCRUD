@@ -17,15 +17,16 @@ export default class Header extends Component {
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav mr-auto">
-                    <li className="nav-item active">
-                      <Link className="nav-link" to="/">Home</Link>
+                    <li className="nav-item">
+                      <Link className={ location.pathname === "/"? "nav-link active": "nav-link"} to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="/about">About</Link>
+                      <Link className={ location.pathname === "/about"? "nav-link active": "nav-link"}  to="/about">About</Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="/category">Category</Link>
+                      <Link className={ location.pathname === "/category"? "nav-link active": "nav-link"} to="/category">Category</Link>
                     </li>
+
                   </ul>
                   <form className="form-inline my-2 my-lg-0">
                     <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
