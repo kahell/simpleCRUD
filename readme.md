@@ -7,7 +7,10 @@
 ## Simple CRUD React
 Simple CRUD React web is a website
 ```
-
+View tag
+Add tag
+Delete tag
+Edit tag
 ```
 ## Architecture
 MVC (Model View Controller) - Laravel
